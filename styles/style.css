@@ -125,8 +125,8 @@ video.result__video {
 .content__list {
   display: flex;
   flex-direction: column;
-  gap: 29px;  
-  margin-top: 18px; 
+  gap: 29px;
+  margin-top: 18px;
 }
 
 .content__video-card {
@@ -223,7 +223,6 @@ video.result__video {
   outline-offset: 5;
 }
 
-
 .search-form__pseudo-checkbox {
   width: 20px;
   height: 20px;
@@ -262,7 +261,7 @@ video.result__video {
   padding: 6px 73px;
   align-self: flex-end;
   margin-top: 20px;
-  margin-left: 6px; 
+  margin-left: 6px;
 }
 
 .more-button {
