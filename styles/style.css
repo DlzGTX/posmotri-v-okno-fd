@@ -59,7 +59,7 @@ ol {
   flex-wrap: nowrap;
   align-items: flex-end;
   width: 100%;
-  gap: 30px;
+  gap: 28px;
 }
 
 .result {
@@ -85,13 +85,13 @@ video.result__video {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 15px;
 }
 
 .search-form__fieldset-title {
   font-family: 'Fira Sans Condensed', serif, sans-serif;
   font-weight: 400;
   font-size: 18px;
+  margin: 3px 0;
 }
 
 .content__details {
@@ -101,12 +101,11 @@ video.result__video {
 }
 
 .title {
-  padding-bottom: 20px;
   font-family: 'Oswald', serif, sans-serif;
   color: #fff;
   font-weight: 700;
   font-size: 75px;
-  line-height: 94%;
+  line-height: 0.94;
   text-transform: uppercase;
 }
 
@@ -116,25 +115,24 @@ video.result__video {
 
 .content__list-container {
   height: 300px;
-  overflow: scroll;
+  overflow: auto;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 49px;
   position: relative;
-  overflow-x: hidden;
 }
 
 .content__list {
   display: flex;
   flex-direction: column;
-  gap: 31px;
+  gap: 29px;  
+  margin-top: 18px; 
 }
 
 .content__video-card {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 20px;
 }
 
 .content__video-card-title {
@@ -153,14 +151,14 @@ video.result__video {
   font-family: 'Fira Sans Condensed', seif, sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 16.2px;
+  line-height: 1;
   color: #fff;
 }
 
 .content__video-card-thumbnail {
   height: 103px;
-  min-width: 195px;
-  object-fit: contain;
+  width: 195px;
+  object-fit: cover;
   object-position: center;
 }
 
@@ -180,7 +178,7 @@ video.result__video {
 
 .search-form__checkbox-list {
   display: flex;
-  gap: 13px;
+  gap: 15px;
   margin-top: 4px;
 }
 
@@ -192,7 +190,7 @@ video.result__video {
   display: flex;
   align-items: center;
   width: fit-content;
-  gap: 5px;
+  gap: 4px;
 }
 
 .search-form__textfield {
@@ -200,14 +198,16 @@ video.result__video {
   font-family: 'Fira Sans Condensed', sans-serif, serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 100%;
+  line-height: 1;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   border-right: none;
+  border-left: none;
+  outline: none;
   color: #fff;
   background-color: #1b1919;
   appearance: none;
-  margin-top: 5px;
+  margin: 2px;
 }
 
 .search-form__textfield::placeholder {
@@ -218,9 +218,11 @@ video.result__video {
   outline: none;
 }
 
-.search-form__label:has(:focus-visible) {
+.search-form__label:has(input:focus-visible) {
   outline: 1px solid #fff;
+  outline-offset: 5;
 }
+
 
 .search-form__pseudo-checkbox {
   width: 20px;
@@ -257,14 +259,16 @@ video.result__video {
 }
 
 .search-form__submit-button {
-  padding: 6px 75px;
+  padding: 6px 73px;
   align-self: flex-end;
   margin-top: 20px;
+  margin-left: 6px; 
 }
 
 .more-button {
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding: 6px 73px;
+  margin-left: 3px;
+  margin-right: 5px;
 }
 
 .button:hover {
@@ -311,4 +315,8 @@ video.result__video {
 .content__list-item {
   padding-left: 3px;
   padding-right: 3px;
+}
+
+.content__card-link_current {
+  background-color: #545050;
 }
